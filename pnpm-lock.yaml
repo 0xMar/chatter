@@ -17,6 +17,9 @@ dependencies:
   '@remix-run/vercel':
     specifier: ^1.16.1
     version: 1.16.1(@vercel/node@2.10.3)
+  '@supabase/auth-helpers-remix':
+    specifier: ^0.2.0
+    version: 0.2.0(@supabase/supabase-js@2.24.0)
   '@supabase/supabase-js':
     specifier: ^2.24.0
     version: 2.24.0
@@ -1903,6 +1906,24 @@ packages:
   /@sindresorhus/is@4.6.0:
     resolution: {integrity: sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==}
     engines: {node: '>=10'}
+
+  /@supabase/auth-helpers-remix@0.2.0(@supabase/supabase-js@2.24.0):
+    resolution: {integrity: sha512-ZPv22YTmWK+Y61a7Teab1n80fCJKseknNGTHm5vDCOQ/TLw8ERX27Hz5+8/ix4WfnlTXJKhQcUuZVKbRFBgk1A==}
+    peerDependencies:
+      '@supabase/supabase-js': ^2.19.0
+    dependencies:
+      '@supabase/auth-helpers-shared': 0.4.0(@supabase/supabase-js@2.24.0)
+      '@supabase/supabase-js': 2.24.0
+    dev: false
+
+  /@supabase/auth-helpers-shared@0.4.0(@supabase/supabase-js@2.24.0):
+    resolution: {integrity: sha512-5wlCGb4HZ46W2fg8tdi22ZU1GAIOe3YxXrTgvAjWVapNFN+PiH5cFIbz51ZgZRK1TokRZ01pB1GEFy4e+NZE+A==}
+    peerDependencies:
+      '@supabase/supabase-js': ^2.19.0
+    dependencies:
+      '@supabase/supabase-js': 2.24.0
+      jose: 4.14.4
+    dev: false
 
   /@supabase/functions-js@2.1.1:
     resolution: {integrity: sha512-bIR1Puae6W+1/MzPfYBWOG/SCWGo4B5CB7c0ZZksvliNEAzhxNBJ0UFKYINcGdGtxG8ZC+1xr3utWpNZNwnoRw==}
@@ -4946,6 +4967,10 @@ packages:
 
   /javascript-stringify@2.1.0:
     resolution: {integrity: sha512-JVAfqNPTvNq3sB/VHQJAFxN/sPgKnsKrCwyRt15zwNCdrMMJDdcEOdubuy+DuJYYdm0ox1J4uzEuYKkN+9yhVg==}
+
+  /jose@4.14.4:
+    resolution: {integrity: sha512-j8GhLiKmUAh+dsFXlX1aJCbt5KMibuKb+d7j1JaOJG6s2UjX1PQlW+OKB/sD4a/5ZYF4RcmYmLSndOoU3Lt/3g==}
+    dev: false
 
   /js-sdsl@4.4.0:
     resolution: {integrity: sha512-FfVSdx6pJ41Oa+CF7RDaFmTnCaFhua+SNYQX74riGOpl96x+2jQCqEfQ2bnXu/5DPCqlRuiqyvTJM0Qjz26IVg==}
